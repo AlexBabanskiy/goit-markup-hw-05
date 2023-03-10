@@ -22,9 +22,9 @@
 					<a class="logo-header" href="./index.html">WEB<span class="logo-decor-head">STUDIO</span></a>
 
 					<ul class="list menu-nav">
-						<li><a class="link" href="">Studio</a></li>
-						<li><a class="link" href="./portfolio.html">Portfolio</a></li>
-						<li><a class="link" href="">Contacts</a></li>
+						<li class="menu-link"><a class="link" href="">Studio</a></li>
+						<li class="menu-link"><a class="link" href="./portfolio.html">Portfolio</a></li>
+						<li class="menu-link"><a class="link" href="">Contacts</a></li>
 					</ul>
 				</nav>
 				<address class="address">
@@ -43,7 +43,7 @@
 						>Effective Solutions<br />
 						for Your Business</h1
 					>
-					<button class="button-main" type="button">Order Service</button>
+					<button data-modal-open class="button-main" type="button">Order Service</button>
 				</div>
 			</section>
 
@@ -366,5 +366,13 @@
 				</ul>
 			</div>
 		</footer>
+		<div data-modal class="backdrop is-hidden">
+			<div class="modal">
+				<button data-modal-close class="modal-button" type="button">
+					<div></div>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
